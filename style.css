@@ -1,0 +1,100 @@
+body{
+
+background-color: #000000; 
+
+text-align:center;
+
+font-family: "Kaisei Opti", serif !important;
+  font-weight: 400;
+  color: #ffffff !important;
+
+
+}
+
+.ichigo{
+
+font-family: "Nikukyu";
+color: #dc143c;
+
+}
+
+/* 文字の高さを合わせる　*/
+
+.adjust{
+  vertical-align:-6px;
+}
+
+
+
+/* 画像をスライドショーさせるよ */
+
+.slideshow-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0; /* 最初は透明 */
+  transform: translateX(100%); /* 右からスタート */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide.active {
+  opacity: 1; /* 表示 */
+  transform: translateX(0); /* 元の位置 */
+}
+
+.slide.fade-out {
+  opacity: 0;
+  transform: translateX(-100%); /* 左に消える */
+}
+
+/* ピンマークをゆらゆらさせる　*/
+
+.pin{
+  position:relative;
+  display:inline-block;
+  padding-left:20px;
+}
+
+.pin::before{
+  content:"";
+
+  position:absolute;
+  left:0;
+  top:4px;
+  width:12px;
+  height:12px;
+  background:#dc143c;
+  border-radius:50%;
+  animation:wobble 1s infinite alternate;
+}
+
+.pin::after{
+  content:"";
+  position:absolute;
+  left:5px;     /* 丸の中央に合わせる */
+  top:12px;      /* 丸と同じ高さ */
+  width:2px;
+  height:12px;
+  background:#dc143c;
+  transform-origin:top center;
+  animation:wobble 1s infinite alternate;
+}
+
+@keyframes wobble{
+  from{
+    transform:rotate(-15deg)translateX(-2px);
+  }
+  to{
+    transform:rotate(15deg)translateX(2px);
+  }
+}

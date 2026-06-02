@@ -4,17 +4,22 @@ background-color: #000000;
 
 text-align:center;
 
+  
+
+
 font-family: "Kaisei Opti", serif !important;
   font-weight: 400;
   color: #ffffff !important;
 
 
 }
-
+@font-face {
+  font-family: "Nikukyu";
+  src: url("../font/Nikukyu.TTF"); 
+}
 .ichigo{
 
 font-family: "Nikukyu";
-src:url("./nikukyuu.ttf");
 color: #dc143c;
 
 }

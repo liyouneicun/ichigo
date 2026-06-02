@@ -14,12 +14,12 @@ font-family: "Kaisei Opti", serif;
 
 }
 @font-face {
-  font-family: "Nikukyu";
+  font-family: "Nikukyu"!important;
   src: url("../Nikukyu.TTF"); 
 }
 .ichigo{
 
-font-family: "Nikukyu";
+font-family: "Nikukyu"!important;
 color: #dc143c;
 
 }

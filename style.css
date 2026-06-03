@@ -10,19 +10,36 @@ text-align:center;
 font-family: "Kaisei Opti", serif;
   font-weight: 400;
   color: #ffffff;
-
+}
 
 .ichigo{
 
-color: #dc143c;
+color: #dc143c!important;
 
 }
 
-/* 文字の高さを合わせる　*/
+.ichigo2{
 
-.adjust{
-  vertical-align:-6px;
+  display:inline-block;
+  animation: sway 2s infinite alternate;
+
 }
+
+@keyframes sway{
+
+  from{
+    transform:rotate(-15deg)translateX(-2px);
+  }
+  to{
+    transform:rotate(15deg)translateX(2px);
+  }
+
+}
+
+
+
+a{color:#dc143c}
+
 
 
 
